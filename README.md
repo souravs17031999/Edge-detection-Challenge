@@ -5,7 +5,7 @@ Create a page or tool which performs edge detection on a given image and, given 
 
 # Approach :
 
-* Using ```Canny edge detection```` (openCV) + ```KNN``` algorithm with ```Flask``` server.    
+* Using ```Canny edge detection``` (openCV) + ```KNN``` algorithm with ```Flask``` server.    
 * Edge detection in the browser using ```tensorflow.js```    
 
 # Getting started :
