@@ -1,3 +1,4 @@
+# import important packages
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,34 +7,54 @@ import argparse
 import scipy
 from scipy import spatial
 
-class object_detection:
+# main class for edge detection script
+class edge_detection:
 
-    # Locate the closest point on the edge using KNN
+    # function for Locating the closest point on the edge using KNN
     def get_min(self, result, test_row, num_neighbors):
-        distances = []
+        '''
+        result : filtered image after applying convolution
+        test_row : given point by the user
+        num_neighbors : no of neighbours to consider for the KNN algorithm
+        '''
+        distances = []   # distances is list of tuples where first item : coordinate, second item : distance
         rows, cols = len(result), len(result[0])
+        # looping over the entire image
         for i in range(rows):
             for j in range(cols):
+                    # only calculate distance if there is edge detected at that point
                     if result[i][j]:
+                        # euclidean distance calculation
                         dist = scipy.spatial.distance.euclidean(test_row, [j, i])
                         distances.append(([j, i], dist))
+        # sorting the distances list on the basis of distance between given point and the corresponding point on image
         distances.sort(key=lambda tup: tup[1])
+        # calculating only the first neighbour, the first closest edge
         neighbors = []
         if len(distances):
                 neighbors.append((distances[0][0], distances[0][1]))
+
+        # return the first closest edge
         return neighbors
 
+    # function for applying filter over the image
     def filter(self, gray):
-        # apply opencv convolution canny edge detection
+        '''
+        gray : grayscaled image
+        '''
+        # apply opencv convolution using canny edge detection
         output = cv2.Canny(gray, 100, 200)
         return output
 
-
+    # function for main driver
     def main(self, image_path, y):
+        '''
+        image_path : Actual complete path of the image
+        y : given point by the user in the image
+        '''
+        image = cv2.imread(image_path)  # read the image
 
-        image = cv2.imread(image_path)
-        # changing image to gray scale , that means now the channel is 1
-        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  # changing image to gray scale , that means now the channel is 1
         print(f"Image read , shape of image is {image.shape}")
         # calling for applying filters and plotting the output images
         result_img = self.filter(gray)
@@ -69,5 +90,5 @@ if __name__ == '__main__':
     parser.add_argument('X', type=int, help='X coordinate')
     parser.add_argument('Y', type=int, help='Y coordinate')
     args = parser.parse_args()
-    o = object_detection()
+    o = edge_detection()
     o.main(args.Image_path, [args.X, args.Y])
