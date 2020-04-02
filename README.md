@@ -9,12 +9,14 @@ Create a page or tool which performs edge detection on a given image and, given 
 > Brief introduction :         
 * Canny edge detection steps ->   Canny edge detection is a technique to extract useful structural information from different vision objects and dramatically reduce the amount of data to be processed.           
 1. Apply Gaussian filter to smooth the image in order to remove the noise      
-![1](1.JPG)     
-2. Find the intensity gradients of the image.
-![2](2.JPG)   
+![1](/img/1.JPG)       
+     
+     
+2. Find the intensity gradients of the image.       
+![2](/img/2.JPG)       
 3. Apply non-maximum suppression to get rid of spurious response to edge detection     
 4. Apply double threshold to determine potential edges        
-5. Track edge by hysteresis: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges.        
+5. Track edge by hysteresis: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges.           
 * Edge detection in the browser using ```tensorflow.js```    
 
 # Getting started :
