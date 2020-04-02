@@ -77,8 +77,10 @@ class edge_detection:
         fig.add_subplot(1, 3, 1)
         plt.imshow(image)
         fig.add_subplot(1, 3, 2)
+        plt.title('Gray scaled image')
         plt.imshow(gray, cmap='gray')
         fig.add_subplot(1, 3, 3)
+        plt.title('Detected edges')
         plt.imshow(result_img, cmap='gray')
         plt.show()
 
