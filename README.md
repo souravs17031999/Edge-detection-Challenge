@@ -20,8 +20,8 @@ Create a page or tool which performs edge detection on a given image and, given 
 * Edge detection in the browser using ```tensorflow.js```    
 
 # Getting started :
-[TODO]
+
 # Sample runs with outputs : 
-[TODO]
+![output](/img/output.JPG)
 
 
