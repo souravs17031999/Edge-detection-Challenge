@@ -24,5 +24,6 @@ Create a page or tool which performs edge detection on a given image and, given 
 # Sample runs with outputs :    
 Note : closest edges are marked and shown.    
 ![output1](/img/output1.JPG)
+![output2](/img/output2.JPG)
 
 
