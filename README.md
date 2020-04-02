@@ -21,7 +21,8 @@ Create a page or tool which performs edge detection on a given image and, given 
 
 # Getting started :
 
-# Sample runs with outputs : 
+# Sample runs with outputs :    
+![output2](/img/output2.JPG)
 ![output](/img/output.JPG)
 
 
