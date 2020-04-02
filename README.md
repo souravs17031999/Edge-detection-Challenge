@@ -16,7 +16,7 @@ Create a page or tool which performs edge detection on a given image and, given 
 ![2](/img/2.JPG)       
 3. Apply non-maximum suppression to get rid of spurious response to edge detection     
 4. Apply double threshold to determine potential edges        
-5. Track edge by hysteresis: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges.        
+5. Track edge by hysteresis: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges.           
 * Edge detection in the browser using ```tensorflow.js```    
 
 # Getting started :
