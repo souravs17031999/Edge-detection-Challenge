@@ -39,7 +39,7 @@ Explanation : test sample (green dot) should be classified either to blue square
 
 * Download the project files using following command in the directory from where you need to run the script :     
 ```
-git clone https://github.com/souravs17031999/Object-Detection-MobileNet-cv      
+git clone https://github.com/souravs17031999/Edge-detection-Challenge       
 ```   
 * Change directory to ```edge_detect_cmd```.    
 
