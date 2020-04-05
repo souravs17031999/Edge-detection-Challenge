@@ -25,7 +25,7 @@ Both for classification and regression, a useful technique can be to assign weig
 ![knn](/img/knn.png)    
 Explanation : test sample (green dot) should be classified either to blue squares or to red triangles. If k = 3 (solid line circle) it is assigned to the red triangles because there are 2 triangles and only 1 square inside the inner circle. If k = 5 (dashed line circle) it is assigned to the blue squares (3 squares vs. 2 triangles inside the outer circle).   
   
-* Edge detection in the browser using ```tensorflow.js```    
+* Edge detection in the browser using ```tensorflow.js``` [TODO - Currently in progress]   
 
 # Getting started :
 ### Real time Flask server hosted :      
