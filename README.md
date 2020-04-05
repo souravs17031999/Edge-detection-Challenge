@@ -32,6 +32,28 @@ Explanation : test sample (green dot) should be classified either to blue square
 * Log on to following URL hosted on pythonanywhere.com using flask server :    
 #### [LIVE WEBSITE](https://souravdlboy.pythonanywhere.com/)
 
+### CMD (terminal) solution :     
+* We need to install latest version of Opencv.       
+[Download here](https://pypi.org/project/opencv-python/)      
+* Run the cmd (terminal).      
+
+* Download the project files using following command in the directory from where you need to run the script :     
+```
+git clone https://github.com/souravs17031999/Object-Detection-MobileNet-cv      
+```   
+* Change directory to ```edge_detect_cmd```.    
+
+* Run the command using the following parameters as shown :    
+```
+python edge_detection.py <image> <X> <Y>    
+``` 
+positional arguments:   
+| arguments  | details |
+| ------------- | ------------- |
+| image | Image path |  
+| X | x coordinate of user selected point |
+| Y | y coordinate of user selected point |      
+
 # Sample runs with outputs :    
 Note : closest edges are marked and shown.  
 ![flask1](/img/flask1.JPG)   
