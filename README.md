@@ -16,7 +16,12 @@ Create a page or tool which performs edge detection on a given image and, given 
 ![2](/img/2.JPG)       
 3. Apply non-maximum suppression to get rid of spurious response to edge detection     
 4. Apply double threshold to determine potential edges        
-5. Track edge by hysteresis: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges.           
+5. Track edge by hysteresis: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges.             
+*  KNN algorithm :    
+k-NN is a type of instance-based learning, or lazy learning, where the function is only approximated locally and all computation is deferred until function evaluation.    
+
+Both for classification and regression, a useful technique can be to assign weights to the contributions of the neighbors, so that the nearer neighbors contribute more to the average than the more distant ones.       
+![knn](/img/knn.PNG)    
 * Edge detection in the browser using ```tensorflow.js```    
 
 # Getting started :
@@ -26,8 +31,10 @@ Create a page or tool which performs edge detection on a given image and, given 
 
 # Sample runs with outputs :    
 Note : closest edges are marked and shown.  
-[!flask1](/img/flask1.JPG)
-[!flask2](/img/flask2.JPG)
+![flask1](/img/flask1.JPG)   
+
+![flask2](/img/flask2.JPG)      
+
 ![output1](/img/output1.JPG)
 ![output2](/img/output2.JPG)
 ![output3](/img/output3.JPG)
