@@ -20,8 +20,11 @@ Create a page or tool which performs edge detection on a given image and, given 
 *  ```KNN algorithm``` :    
 k-NN is a type of instance-based learning, or lazy learning, where the function is only approximated locally and all computation is deferred until function evaluation.    
 
-Both for classification and regression, a useful technique can be to assign weights to the contributions of the neighbors, so that the nearer neighbors contribute more to the average than the more distant ones.       
+Both for classification and regression, a useful technique can be to assign weights to the contributions of the neighbors, so that the nearer neighbors contribute more to the average than the more distant ones.           
+[Taken from wikipedia] :  
 ![knn](/img/knn.png)    
+Explanation : test sample (green dot) should be classified either to blue squares or to red triangles. If k = 3 (solid line circle) it is assigned to the red triangles because there are 2 triangles and only 1 square inside the inner circle. If k = 5 (dashed line circle) it is assigned to the blue squares (3 squares vs. 2 triangles inside the outer circle).   
+  
 * Edge detection in the browser using ```tensorflow.js```    
 
 # Getting started :
