@@ -20,9 +20,14 @@ Create a page or tool which performs edge detection on a given image and, given 
 * Edge detection in the browser using ```tensorflow.js```    
 
 # Getting started :
+### Real time Flask server hosted :      
+* Log on to following URL hosted on pythonanywhere.com using flask server :    
+#### [LIVE WEBSITE](https://souravdlboy.pythonanywhere.com/)
 
 # Sample runs with outputs :    
-Note : closest edges are marked and shown.    
+Note : closest edges are marked and shown.  
+[!flask1](/img/flask1.JPG)
+[!flask2](/img/flask2.JPG)
 ![output1](/img/output1.JPG)
 ![output2](/img/output2.JPG)
 ![output3](/img/output3.JPG)
