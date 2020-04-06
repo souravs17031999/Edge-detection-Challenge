@@ -30,7 +30,7 @@ Explanation : test sample (green dot) should be classified either to blue square
 # Getting started :
 ### Real time Flask server hosted :      
 * Log on to following URL hosted on pythonanywhere.com using flask server :    
-#### [LIVE WEBSITE](https://souravdlboy.pythonanywhere.com/)
+### [LIVE WEBSITE](https://souravsdlboy.pythonanywhere.com/edge)
 
 ### CMD (terminal) solution :     
 * We need to install latest version of Opencv.       
